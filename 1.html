@@ -1,0 +1,60 @@
+<!-- Difference between “ == “ and “ === “ operators. -->
+== :- It is used for comparison between two variables. It will check value of the varisble.
+=== :- It is used for stict comparison between two variables. It will check the type and value of both variables.
+
+<!-- What is the spread operator? -->(...)
+It allows to quickly copy all or part of an existing array or object into another array or object.
+ex:- const numberOne = [1,2,3];
+     const numberTwo = [4,5,6];
+     const numberCombined = [...numbersOne, ...numberTwo];
+
+<!-- What are the differences between var, let and const? -->
+var:- 
+The scope of a var variable is functional scope.
+It can be updated and re-declared into the scope.
+It can be declared without initialization.
+It cant have variables with same name.
+let:-
+The scope of a let variable is block scope.
+It can be updated but cannot be re-declared into the scope.
+It can be declared without initialization.
+It cant have variables with same name.
+const:-
+The scope of a const variable is block scope.
+It cannot be updated and re-declared into the scope.
+It cannot be declared without initialization.
+It can have variables with same name.
+
+<!-- What is execution context -->
+It is defined as the environment in which the Js code is executed.
+
+<!-- What is meant by first class functions -->
+A programing language is said to have First-class functions if functions in that language are treated
+like other variables.
+
+<!-- What are closures? -->
+It is a function having access to the parent scope, even after the parent function has closed.
+
+<!-- Give an example of closure -->
+function counter(){
+    var counter = 0;
+
+    function IncreaseCounter() {
+        return counter += 1;
+    };
+
+    return IncreaseCounter;
+}
+
+var counter = counter();
+alert(counter());
+alert(counter());
+alert(counter());
+alert(counter());
+
+<!-- Explain call(), apply() and, bind() methods. -->
+call() - It invokes the function and allows you to pass in arguments one by one.
+apply() - It invokes the function and allows you to pass in arguments as an array.
+bind() - I t returns a new function, allowing you to pass in a this array and any number of arguments.
+
+
